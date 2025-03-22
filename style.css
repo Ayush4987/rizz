@@ -16,34 +16,34 @@ body {
   background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2018/10/2-Millimeter-Paper-Background-copy.jpg?ssl=1");
   background-size: contain;
   background-position: center center;
-  padding: 20px;
+  padding: 40px;
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
   position: absolute;
-  width: auto;
+  width: 80%;
   max-width: 90%;
   box-sizing: border-box;
 }
 
 .paper.heart {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   padding: 0;
   border-radius: 50%;
 }
 
 .paper.image {
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 
 .paper.image p {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 img {
-  max-height: 150px;
+  max-height: 200px;
   width: auto;
   user-select: none;
   margin: 0 auto;
@@ -58,7 +58,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-size: 100px;
+  background-size: 120px;
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.6;
@@ -66,7 +66,7 @@ img {
 
 p {
   font-family: 'Zeyada';
-  font-size: 30px;
+  font-size: 40px;
   color: rgb(0, 0, 100);
   opacity: 0.75;
   user-select: none;
@@ -76,7 +76,35 @@ p {
 @media (max-width: 768px) {
   .paper {
     transform: rotateZ(0deg);
-    padding: 10px;
+    padding: 30px;
+  }
+
+  .paper.image p {
+    font-size: 22px;
+  }
+
+  img {
+    max-height: 150px;
+  }
+
+  .paper.heart {
+    width: 150px;
+    height: 150px;
+  }
+
+  .paper.heart::after {
+    background-size: 100px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .paper {
+    padding: 20px;
+    box-shadow: 1px 10px 15px 0px rgba(0, 0, 0, 0.5);
   }
 
   .paper.image p {
@@ -88,8 +116,8 @@ p {
   }
 
   .paper.heart {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
 
   .paper.heart::after {
@@ -98,33 +126,5 @@ p {
 
   p {
     font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .paper {
-    padding: 5px;
-    box-shadow: 1px 10px 15px 0px rgba(0, 0, 0, 0.5);
-  }
-
-  .paper.image p {
-    font-size: 16px;
-  }
-
-  img {
-    max-height: 100px;
-  }
-
-  .paper.heart {
-    width: 80px;
-    height: 80px;
-  }
-
-  .paper.heart::after {
-    background-size: 60px;
-  }
-
-  p {
-    font-size: 16px;
   }
 }
