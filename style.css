@@ -32,6 +32,7 @@ body {
   height: 200px;
   padding: 0;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .paper.image {
