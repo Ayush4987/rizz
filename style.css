@@ -23,6 +23,7 @@ body {
   width: 80%;
   max-width: 90%;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .paper.heart {
@@ -36,6 +37,7 @@ body {
 .paper.image {
   padding: 20px;
   text-align: center;
+  z-index: 0;
 }
 
 .paper.image p {
